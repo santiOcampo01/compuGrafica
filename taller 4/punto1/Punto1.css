@@ -1,0 +1,100 @@
+body {
+  background: linear-gradient(rgb(16, 16, 16), white); /*background con degradado*/
+}
+
+.container {  /*container principal alto 100% de la pantalla y 100% de ancho*/
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container { /*contenedor de la seccion del login con un with en pixeles */
+  display: flex;
+  width: 650px;
+  height: auto;
+  background: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.register, 
+.login {  /* parte izquierda y derecha con flex 1 para que se repartan el tamaño */
+  flex: 1;
+}
+
+.register {  /*Desconozco que funcion esta cumpliendo el position relative*/
+  padding: 40px;
+  position: relative;
+}
+
+.register h3 { /*titulo del formulario colot y marginbotton para separarlo del formulario*/
+  color: #797979;
+  margin-bottom: 30px;
+}
+
+.register input { /*input del formulario con un ancho del 100% y padding de 5px sin los bordes de arriba, izquierda y derecha */
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 25px;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom: 1px solid #a8a8a8;
+  color: #333;
+}
+
+.register .submit { /* Estilos del boton de enviar */
+  width: auto;
+  padding: 10px;
+  background: #102dc6;
+  color: #fff;
+  font-size: 12px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.login { /*Estilos de la parte derecha del formulario */
+  background-image: linear-gradient(to bottom right, #101515, #dce4df);
+  padding: 40px;
+}
+
+.login h3 { 
+  color: #fff;
+  margin-bottom: 45px;
+}
+
+.login button i {  /* Position absolute para que el icono se posicione en la esquina superior izquierda del contenedor*/
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.login button { /*Estilos de los botones  */
+  width: 100%;
+  margin: 15px 0px;
+  padding: 10px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  position: relative;
+}
+
+.login .fb { /*Estilos de boton facebook */
+  background: #3b5999;
+  border-style: none;
+  color: #fff;
+}
+
+.login .tw { /*Estilos de boton twitter */
+  background: #55acef;
+  border-style: none;
+  color: #fff;
+}
+
+.login .correo { /*Estilos de boton correo */
+  background: #33d4ce;
+  border-style: none;
+  color: #fff;
+}
