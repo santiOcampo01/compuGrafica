@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: #333;
+        }
+        .nav {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        .nav li {
+            margin: 10px 0;
+            position: relative;
+        }
+        .nav a {
+            text-decoration: none;
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        .nav a:hover {
+            background: #0056b3;
+        }
+        .submenu {
+            display: none;
+            list-style: none;
+            padding: 0;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 150px;
+        }
+        .submenu li {
+            margin: 0;
+        }
+        .submenu a {
+            display: block;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border-radius: 0;
+        }
+        .submenu a:hover {
+            background: #0056b3;
+        }
+        .nav li:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Menú de Navegación</h1>
+        <ul class="nav">
+            <li><a href="./taller2/taller2 compugrafica.html" target="_blank">Taller 2</a></li>
+            <li>
+                <a href="#taller4">Taller 4</a>
+                <ul class="submenu">
+                    <li><a href="./taller 4/punto1/Punto1.html" target="_blank">Punto 1</a></li>
+                    <li><a href="./taller 4/punto2/fotmulario.html" target="_blank">Punto 2</a></li>
+                    <li><a href="./taller 4/punto3/index.html" target="_blank">Punto 3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#parcial1">Parcial 1</a>
+                <ul class="submenu">
+                    <li><a href="./parcial 1/htmls/parcial1-SantiagoMejiaOcampo-RafaelUrrea.html" target="_blank">Punto 1</a></li>
+                    <li><a href="./parcial 1/htmls/parcialPunto2.html" target="_blank">Punto 2</a></li>
+                    <li><a href="./parcial 1/htmls/punto3.html" target="_blank">Punto 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

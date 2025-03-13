@@ -1,0 +1,400 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Contenedor superior, el que abarca todo */
+.container {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  padding: 90px;
+  background-color: #e5e5e5;
+}
+
+/* Contenedor de arriba */
+.containerUp {
+  width: auto;
+  max-width: 50%;
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+/* semi cuadrado de la izquierda de arriba */
+.containerUp .box1 {
+  width: 150px;
+  height: 80%;
+  margin-left: 5%;
+  background-color: #e96f62;
+  border-radius: 5px;
+  border: 3px solid black;
+}
+/* circulo central arriba */
+.containerUp .circle1 {
+  width: 150px;
+  height: 80%;
+  background-color: rgba(97, 2, 97, 0.701);
+  border-radius: 100%;
+  border: 3px solid black;
+}
+/* Cuadrado derecha arriba */
+.containerUp .box2 {
+  width: 150px;
+  height: 80%;
+  background-color: #7bae5d;
+  border: 3px solid black;
+  box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.294);
+}
+
+/* Contenedor de la mitad, los 3 elementos centrales */
+.containerMiddle {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+/* contenedor de la izquierda  */
+.conatinerLeft {
+  width: 25%;
+  background-color: #f4a621;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+/* cudrado con bordes superior */
+.conatinerLeft .box1 {
+  width: 150px;
+  height: 100px;
+  background-color: #f4c143;
+  border: 2px solid black;
+  border-radius: 30px 0px 30px 0px;
+}
+/* cudrado rotado */
+.conatinerLeft .box2 {
+  width: 150px;
+  height: 100px;
+  background-color: #769ecf;
+  border: 3px solid black;
+  transform: rotateZ(52deg);
+}
+/* cuadrad con bordes abajo */
+.conatinerLeft .box3 {
+  width: 150px;
+  height: 100px;
+  background-color: #875b4c;
+  border: 2px solid black;
+  border-radius: 0px 30px 0px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.801);
+}
+
+/* contenedor de dos cuadrados con cuadrados dentro */
+.cotanierCenter {
+  display: flex;
+  justify-content: space-between;
+  height: 90%;
+  width: 50%;
+  gap: 20px;
+}
+/* cuadrado grande */
+.cotanierCenter .box1 {
+  height: 100%;
+  width: 100%;
+  background-color: #2892d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* cuadrado mediano */
+.cotanierCenter .box2 {
+  height: 80%;
+  width: 80%;
+  background-color: #30b66d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* cuadrado pequeño */
+.cotanierCenter .box3 {
+  height: 70%;
+  width: 70%;
+  background-color: #e96f62;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* contenedor de la derecha */
+.containerRight {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4a621;
+}
+
+/* circulo de contenedor a la derecha */
+.containerRight .circle {
+  width: 150px;
+  height: 100px;
+  background-color: #4c3182;
+  border: 2px solid black;
+  border-radius: 100%;
+}
+/* cuadrado de contenedor a la derecha */
+.containerRight .box1 {
+  width: 150px;
+  height: 100px;
+  background-color: #16a1c7;
+  border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.717);
+}
+/* cuadrado de contenedor a la derecha */
+.containerRight .box2 {
+  width: 150px;
+  height: 100px;
+  background-color: #f36913;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+/* contenedor inferior */
+.containerBottom {
+  width: auto;
+  max-width: 50%;
+  justify-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 23px;
+  align-items: center;
+}
+
+/* cuadrado izquierdo contenedor inferior */
+.containerBottom .box1 {
+  width: 150px;
+  height: 80%;
+  background-color: #87c05c;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+/* cuadrado central rotado cintenedor inferior */
+.containerBottom .box2 {
+  width: 150px;
+  height: 80%;
+  background-color: #d81c5c;
+  border: 3px solid black;
+  transform: rotateZ(30deg);
+}
+/* cuadrado derecho contenedor inferior */
+.containerBottom .box3 {
+  width: 150px;
+  height: 80%;
+  background-color: #30489c;
+  border: 3px solid black;
+  box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.294);
+}
+
+.point2 {
+  margin: 10%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.navbar-point2 {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+.navbar-point2 div {
+  height: 20px;
+  background: white;
+}
+
+.bar1 {
+  width: 20%;
+  padding: 4px;
+}
+
+.bar2 {
+  width: 12%;
+  padding: 4px;
+}
+
+.bar3 {
+  width: 20%;
+  padding: 4px;
+}
+
+.bar4 {
+  width: 12%;
+  padding: 4px;
+}
+
+.bar5 {
+  width: 12%;
+  padding: 4px;
+}
+
+.point2 section {
+  display: flex;
+  flex: 1;
+}
+.content-point2 {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin: 1% 1% 0 3%;
+}
+.box-point2 {
+  background: lightgray;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.sidebar-point2 {
+  flex: 1;
+  background: black;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebarConteiner1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 25px;
+}
+
+.lineContainer1 {
+  margin-top: 8%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.code-line-point1 {
+  background: red;
+  height: 14px;
+  width: 100%;
+  margin: 5px 0;
+}
+.code-line-point2 {
+  background: brown;
+  height: 14px;
+  width: 80%;
+  margin: 5px 0;
+}
+.code-line-point3 {
+  background: rgba(165, 42, 42, 0.875);
+  height: 14px;
+  width: 60%;
+  margin: 5px 0;
+}
+
+.circle-point2 {
+  width: 80px;
+  height: 90px;
+  background: gold;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.code-line-point2.green-point2 {
+  background: lightgreen;
+}
+.code-line-point2.yellow-point2 {
+  background: yellow;
+}
+.sidebarConteiner2 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+}
+.code-line1 {
+    background: red;
+    height: 13px;
+    width: 90%;
+    margin: 5px 0;
+}
+.code-line2 {
+    background: yellow;
+    height: 13px;
+    width: 60%;
+    margin: 5px 0;
+}
+.code-line3 {
+    background: red;
+    height: 13px;
+    width: 62%;
+    margin: 5px 0;
+}
+.code-line4 {
+    background: red;
+    height: 13px;
+    width: 85%;
+    margin: 5px 0;
+}
+.code-line5 {
+    background: green;
+    height: 13px;
+    width: 30%;
+    margin: 5px 0;
+}
+.code-line6 {
+    background: red;
+    height: 13px;
+    width: 53%;
+    margin: 5px 0;
+}
+.code-line7 {
+    background: red;
+    height: 13px;
+    width: 80%;
+    margin: 5px 0;
+}
+.code-line8 {
+    background: red;
+    height: 13px;
+    width: 7%;
+    margin: 5px 0;
+}
+.code-line9 {
+    background: red;
+    height: 13px;
+    width: 63%;
+    margin: 5px 0;
+}
+.code-line10 {
+    background: red;
+    height: 13px;
+    width: 73%;
+    margin: 5px 0;
+}
+.code-line11 {
+    background: red;
+    height: 13px;
+    width: 50%;
+    margin: 5px 0;
+}
