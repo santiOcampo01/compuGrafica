@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dibujar un rectángulo</title>
+    <link rel="stylesheet" href="./stylePunto2.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Taller 6 - Dibujar un rectángulo</h1>
+      <a href="./index.html">Volver al menú</a>
+    </header>
+    <div class="container">
+      <h2>Dibujar un rectángulo</h2>
+      <div id="menuRecttangulo" class="containerPoint">
+        <div class="divCaracter">
+          <label for="caracter">Ingrese el caracter:</label>
+          <input type='text' id="caracter" placeholder="Ejemplo: #" maxlength="1" required />
+        </div>
+        <div class="divAncho">
+          <label for="ancho">Ancho:</label>
+          <input type="number" id="ancho" placeholder="Ejemplo: 10" min="1" value="4" required />
+        </div>
+        <div class="divAlto">
+          <label for="alto">Alto:</label>
+          <input type="number" id="alto" placeholder="Ejemplo: 10" min="1" value="4" required />
+        </div>
+        <div class="botonesDecontrol">
+          <button id="calculate">Calcular</button>
+          <button id="clear">Limpiar</button>
+        </div>
+      </div>
+      <div class="result" id="result">
+        <h3>Resultados:</h3>
+        <pre id="resultList"></pre>
+      </div>
+    </div>
+  </body>
+  <script src="punto2.js"></script>
+</html>

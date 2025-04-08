@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validar Correo Electrónico</title>
+    <link rel="stylesheet" href="./stylePunto4.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Taller 6 - Validar Correo Electrónico</h1>
+      <a href="index.html">Volver al menú</a>
+    </header>
+    <div class="container">
+      <h2>Validar Correo</h2>
+      <div id="menuCorreo" class="containerPoint">
+        <div class="divNumeros">
+          <label for="correo">Ingrese una cadena:</label>
+          <input type="text" id="correo" placeholder="Ejemplo: usuario@correo.com" required />
+        </div>
+        <div class="botonesDecontrol">
+          <button id="validate">Validar</button>
+          <button id="clear">Limpiar</button>
+        </div>
+      </div>
+      <div class="result" id="result">
+        <h3>Resultado:</h3>
+        <pre id="resultCorreo"></pre>
+      </div>
+    </div>
+  </body>
+  <script src="punto5.js"></script>
+</html>

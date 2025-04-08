@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Años bisiestos</title>
+    <link rel="stylesheet" href="./stylePunto3.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Taller 6 - Años bisiestos</h1>
+      <a href="./index.html">Volver al menú</a>
+    </header>
+    <div class="container">
+      <h2>Años bisiestos</h2>
+      <div id="menuAños" class="containerPoint">
+        <div class="divAños">
+          <label for="añosMenor">Ingrese el año menor:</label>
+          <input type='text' id="añosMenor" placeholder="Ejemplo: 2010" min="1" required />
+        </div>
+        <div class="divAñosMax">
+          <label for="añosMax">Ingrese el año mayor :</label>
+          <input type="text" id="añosMax" placeholder="Ejemplo: 2020" min="1"  required />
+        </div>
+        <div class="botonesDecontrol">
+          <button id="calculate">Calcular</button>
+          <button id="clear">Limpiar</button>
+        </div>
+      </div>
+      <div class="result" id="result">
+        <h3>Resultados:</h3>
+        <pre id="resultList"></pre>
+      </div>
+    </div>
+  </body>
+  <script src="punto3.js"></script>
+</html>
