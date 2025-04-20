@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Componentes Personalizados con Bootstrap 5</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .btn-custom {
+      background-color: #6f42c1;
+      color: white;
+      border-radius: 30px;
+      padding: 0.5rem 1.5rem;
+      font-weight: bold;
+    }
+
+    .navbar-custom {
+      background-color: #343a40;
+      padding: 1.2rem;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      color: #f8f9fa;
+    }
+
+    .navbar-custom .nav-link:hover {
+      color: #ffc107;
+    }
+
+    .card-custom {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card-custom:hover {
+      transform: scale(1.03);
+    }
+
+    .form-control-custom {
+      border: 2px solid #6c757d;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+
+    .form-control-custom:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    .alert-custom {
+      background-color: #ffeeba;
+      color: #856404;
+      border: 1px solid #ffeeba;
+      border-radius: 0.5rem;
+    }
+
+    .modal-content-custom {
+      border-radius: 1rem;
+      border: none;
+      background-color: #f1f1f1;
+    }
+
+    .modal-header-custom {
+      background-color: #007bff;
+      color: white;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mi Marca</a>
+      <div class="collapse navbar-collapse" id="navbarContenido">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicios</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+
+    <button class="btn btn-custom mb-4">Botón Personalizado</button>
+
+    <div class="card card-custom mb-4">
+      <div class="card-body">
+        <h5 class="card-title">Tarjeta Personalizada</h5>
+        <p class="card-text">Este es un ejemplo de tarjeta con estilo personalizado usando Bootstrap 5.</p>
+      </div>
+    </div>
+
+    <div class="mb-4">
+      <label for="nombre" class="form-label">Nombre:</label>
+      <input type="text" class="form-control form-control-custom" id="nombre" placeholder="Ingresa tu nombre">
+    </div>
+
+    <div class="alert alert-custom mb-4">
+      ¡Este es un mensaje de alerta personalizado con Bootstrap!
+    </div>
+
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">Abrir Modal</button>
+
+  </div>
+
+  <div class="modal fade" id="miModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header modal-header-custom">
+          <h5 class="modal-title">Título del Modal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Este es un contenido dentro de un modal personalizado.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
