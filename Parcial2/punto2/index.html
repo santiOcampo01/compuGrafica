@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gráfico de Líneas en Canvas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex justify-content-center align-items-center vh-100">
+    <div class="w-100" style="max-width: 600px">
+      <h2 class="text-center mb-4">Gráfico de líneas en Canvas</h2>
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-8">
+              <div class="form-group">
+                <label for="dataInput">Introduce los datos separados por comas:</label>
+                <textarea
+                  id="dataInput"
+                  class="form-control form-control-sm"
+                  rows="2"
+                  placeholder="Ejemplo: 10,30,20,40,35,50,45"
+                ></textarea>
+              </div>
+              <button id="drawButton" class="btn btn-primary btn-sm btn-block">Graficar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body d-flex justify-content-center">
+          <canvas id="lineChart" width="500" height="400"></canvas>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
